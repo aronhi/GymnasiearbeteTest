@@ -10,6 +10,7 @@
     tools:context="com.example.ah980627.gymnasiearbetetest.MainActivity">
 
     <Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
@@ -20,6 +21,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="80dp"
         android:elegantTextHeight="false"
-        android:enabled="false" />
+        android:ellipsize="middle"
+        android:enabled="true" />
 
 </RelativeLayout>
