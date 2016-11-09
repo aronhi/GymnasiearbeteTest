@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void Stage1OnClick(View v){
+
+        if (v.getId()==R.id.button){
+            Intent i = new Intent(MainActivity.this, Stage1Activity.class);
+            startActivity(i);
+        }
 
 
-        public void Stage1OnClick(View v){
-
-            if (v.getId()==R.id.button){
-                Intent i = new Intent(MainActivity.this, Stage1Activity.class);
-                startActivity(i);
-            }
         }
     }
 
