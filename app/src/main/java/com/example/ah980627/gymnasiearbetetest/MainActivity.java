@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import static com.example.ah980627.gymnasiearbetetest.R.styleable.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,8 +12,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        //går till program val
+
         public void Stage1OnClick(View v){
 
             if (v.getId()==R.id.button){
@@ -23,4 +23,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-}
+
