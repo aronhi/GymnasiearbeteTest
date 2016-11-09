@@ -13,7 +13,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="Stage 1"
         android:id="@+id/button"
         android:textColor="#000000"
         android:background="#ffe11414"
@@ -22,6 +22,7 @@
         android:textSize="80dp"
         android:elegantTextHeight="false"
         android:ellipsize="middle"
-        android:enabled="true" />
+        android:enabled="true"
+        android:onClick="Stage1OnClick" />
 
 </RelativeLayout>
