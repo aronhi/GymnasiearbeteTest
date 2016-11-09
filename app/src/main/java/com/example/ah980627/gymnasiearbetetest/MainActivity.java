@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         if (v.getId()==R.id.button){
             Intent i = new Intent(MainActivity.this, Stage1Activity.class);
             startActivity(i);
-            //hej
+
         }
 
 
