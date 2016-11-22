@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void Stage1OnClick(View v){
+        public void Stage1OnClick(View v){
 
-        if (v.getId()==R.id.button){
-            Intent i = new Intent(MainActivity.this, Stage1Activity.class);
-            startActivity(i);
+            if (v.getId()==R.id.button){
+                Intent i = new Intent(MainActivity.this, Stage1Activity.class);
+                startActivity(i);
 
-        }
+            }
 
 
         }
