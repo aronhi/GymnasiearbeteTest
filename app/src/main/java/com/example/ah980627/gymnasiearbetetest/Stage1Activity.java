@@ -14,16 +14,27 @@ public class Stage1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stage1);
+
+//skapar en arry med tal från 0 till 5
+        Integer[] arr = new Integer[5];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
         }
+        //blandar om arrayen random
         Collections.shuffle(Arrays.asList(arr));
-    }
-    Integer[] arr = new Integer[5];
-    String[] aHardwareName= {"Hårddisk", "Grafikkort", "Processor", "PSU", "SSD"};
+
+
+        //skapr en string array med datorkomponenters namn
+        String[] getHardwareName = {"Hårddisk", "Grafikkort", "Processor", "PSU", "SSD"};
+        //ger komponenterna ett värde efter förta arrayen
+        for (Integer arrNumber : arr) {
+            String result = getHardwareName[arrNumber];
+
+        }
 
 
     }
+}
 
 
 
