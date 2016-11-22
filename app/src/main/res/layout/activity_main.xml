@@ -34,6 +34,7 @@
             android:background="@android:color/transparent"
             android:textColor="@android:color/background_light" />
 
+
         <Button
             android:text="Start"
             android:layout_width="match_parent"
