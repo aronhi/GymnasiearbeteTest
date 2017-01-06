@@ -68,8 +68,8 @@ public class Stage1Activity extends AppCompatActivity {
         }
 
         //spell out the text from the for loop
-       if (correctbox1==true){TextView boxed1 = (TextView)findViewById(R.id.box1);
-        boxed1.setText(boxName1);}
+        TextView boxed1 = (TextView)findViewById(R.id.box1);
+        boxed1.setText(boxName1);
 
         TextView boxed2 = (TextView)findViewById(R.id.box2);
         boxed2.setText(boxName2);
