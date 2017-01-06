@@ -25,5 +25,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
+
+    public void HowToPlayOnClick(View v){
+
+        if (v.getId()==R.id.button2){
+            Intent i = new Intent(MainActivity.this, HowToPlayActivity.class);
+            startActivity(i);
+
+        }
+
+
+    }
+
+
     }
 
