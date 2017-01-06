@@ -32,7 +32,8 @@
             android:layout_width="150dp"
             android:textSize="30dp"
             android:background="@android:color/transparent"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:onClick="HowToPlayOnClick" />
 
 
         <Button
