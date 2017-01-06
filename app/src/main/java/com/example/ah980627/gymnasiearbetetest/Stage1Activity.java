@@ -16,12 +16,16 @@ public class Stage1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stage1);
 
+
         boolean box1 = true;
         boolean box2 = true;
         boolean box3 = true;
         boolean box4 = true;
         boolean box5 = true;
 
+        boolean correctbox1=false;
+
+        String svar ="Hårddisk";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -44,6 +48,9 @@ public class Stage1Activity extends AppCompatActivity {
             if (box1) {
                 boxName1 = result;
                 box1 = false;
+                if(result == svar){
+                    correctbox1 = true;
+                }else {correctbox1 =false;}
             } else if (box2) {
                 boxName2 = result;
                 box2 = false;
@@ -61,8 +68,8 @@ public class Stage1Activity extends AppCompatActivity {
         }
 
         //spell out the text from the for loop
-        TextView boxed1 = (TextView)findViewById(R.id.box1);
-        boxed1.setText(boxName1);
+       if (correctbox1==true){TextView boxed1 = (TextView)findViewById(R.id.box1);
+        boxed1.setText(boxName1);}
 
         TextView boxed2 = (TextView)findViewById(R.id.box2);
         boxed2.setText(boxName2);
