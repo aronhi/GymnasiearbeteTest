@@ -16,7 +16,7 @@ public class Stage1ActivityCpu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage1);
+        setContentView(R.layout.activity_stage1_cpu);
 
 
         boolean box1 = true;

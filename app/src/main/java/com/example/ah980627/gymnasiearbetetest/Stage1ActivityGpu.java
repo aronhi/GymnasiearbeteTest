@@ -16,7 +16,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage1);
+        setContentView(R.layout.activity_stage1_gpu);
 
 
         boolean box1 = true;
@@ -87,7 +87,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
                     startActivity(i);
                 }
             });
@@ -107,7 +107,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
         if(correctbox1 == 2){
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
                     startActivity(i);
                 }
             });
@@ -127,7 +127,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
         if(correctbox1 == 3){
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
                     startActivity(i);
                 }
             });
@@ -147,7 +147,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
         if(correctbox1 == 4){
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
                     startActivity(i);
                 }
             });
@@ -167,7 +167,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
         if(correctbox1 == 5){
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
                     startActivity(i);
                 }
             });
