@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         public void Stage1OnClick(View v){
 
             if (v.getId()==R.id.button){
-                Intent i = new Intent(MainActivity.this, Stage1Activity.class);
+                Intent i = new Intent(MainActivity.this, Stage1ActivityHdd.class);
                 startActivity(i);
 
             }

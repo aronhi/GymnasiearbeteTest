@@ -11,7 +11,7 @@ import java.util.Collections;
 
 
 
-public class Stage1Activity extends AppCompatActivity {
+public class Stage1ActivityHdd extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,14 +87,14 @@ public class Stage1Activity extends AppCompatActivity {
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -107,14 +107,14 @@ public class Stage1Activity extends AppCompatActivity {
         if(correctbox1 == 2){
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -127,14 +127,14 @@ public class Stage1Activity extends AppCompatActivity {
         if(correctbox1 == 3){
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -147,14 +147,14 @@ public class Stage1Activity extends AppCompatActivity {
         if(correctbox1 == 4){
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -167,14 +167,14 @@ public class Stage1Activity extends AppCompatActivity {
         if(correctbox1 == 5){
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1Activity.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
