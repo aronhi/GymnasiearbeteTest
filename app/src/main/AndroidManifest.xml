@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".HowToPlayActivity"/>
         <activity android:name=".Stage1Activity"/>
+        <activity android:name=".Stage2Activity"/>
 
 
     </application>
