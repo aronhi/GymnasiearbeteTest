@@ -11,12 +11,12 @@ import java.util.Collections;
 
 
 
-public class Stage1ActivityPsu extends AppCompatActivity {
+public class Stage1ActivitySsd extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage1_psu);
+        setContentView(R.layout.activity_stage1_ssd);
 
 
         boolean box1 = true;
@@ -27,7 +27,7 @@ public class Stage1ActivityPsu extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="PSU";
+        String svar ="SSD";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -87,14 +87,14 @@ public class Stage1ActivityPsu extends AppCompatActivity {
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, Stage1ActivitySsd.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -107,14 +107,14 @@ public class Stage1ActivityPsu extends AppCompatActivity {
         if(correctbox1 == 2){
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, Stage1ActivitySsd.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -127,14 +127,14 @@ public class Stage1ActivityPsu extends AppCompatActivity {
         if(correctbox1 == 3){
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, Stage1ActivitySsd.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -147,14 +147,14 @@ public class Stage1ActivityPsu extends AppCompatActivity {
         if(correctbox1 == 4){
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, Stage1ActivitySsd.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -167,14 +167,14 @@ public class Stage1ActivityPsu extends AppCompatActivity {
         if(correctbox1 == 5){
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, Stage1ActivitySsd.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityPsu.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
                     startActivity(i);
                 }
             });
