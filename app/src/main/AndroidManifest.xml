@@ -18,7 +18,9 @@
         <activity android:name=".HowToPlayActivity" />
         <activity android:name=".Stage1ActivityHdd" />
         <activity android:name=".Stage2Activity" />
-        <activity android:name=".Stage1ActivityGpu"></activity>
+        <activity android:name=".Stage1ActivityGpu" />
+        <activity android:name=".Stage1ActivityPsu" />
+        <activity android:name=".Stage1ActivityCpu"></activity>
     </application>
 
 </manifest>

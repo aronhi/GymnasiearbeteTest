@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stage1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ah980627.gymnasiearbetetest.Stage1ActivityPsu">
+
+    <TextView
+        android:text="box3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/box2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:id="@+id/box3"
+        android:onClick="onClick3"/>
+
+    <TextView
+        android:text="box4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/box1"
+        android:layout_toEndOf="@+id/box1"
+        android:layout_marginBottom="54dp"
+        android:id="@+id/box4"
+        android:onClick="onClick4"/>
+
+    <TextView
+        android:text="box5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/box4"
+        android:layout_toLeftOf="@+id/box3"
+        android:layout_toStartOf="@+id/box3"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:id="@+id/box5"
+        android:onClick="onClick5"/>
+
+    <TextView
+        android:text="What is this component ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Box1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/box1"
+        android:onClick="onClick1"
+        android:layout_above="@+id/box4"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:text="Box2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/box2"
+        android:onClick="onClick2"
+        android:layout_below="@+id/imageView2"
+        android:layout_toRightOf="@+id/box4"
+        android:layout_toEndOf="@+id/box4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/psu"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/box1" />
+</RelativeLayout>
