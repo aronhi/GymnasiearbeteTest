@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".HowToPlayActivity"/>
-        <activity android:name=".Stage1Activity"/>
+        <activity android:name=".Stage1ActivityHdd"/>
         <activity android:name=".Stage2Activity"/>
 
 
