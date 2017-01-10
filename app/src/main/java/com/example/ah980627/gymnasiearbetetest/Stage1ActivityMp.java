@@ -9,14 +9,11 @@ import android.widget.TextView;
 import java.util.Arrays;
 import java.util.Collections;
 
-
-
-public class Stage1ActivitySsd extends AppCompatActivity {
-
+public class Stage1ActivityMp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage1_ssd);
+        setContentView(R.layout.activity_stage1_activty_mb);
 
 
         boolean box1 = true;
@@ -28,14 +25,14 @@ public class Stage1ActivitySsd extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="SSD";
+        String svar ="Hårddisk";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
         String boxName4 = "";
         String boxName5 = "";
         String boxName6 = "";
-//skapar en arry med tal från 0 till 5
+//skapar en arry med tal från 0 till 6
         Integer[] arr = new Integer[6];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
@@ -96,14 +93,14 @@ public class Stage1ActivitySsd extends AppCompatActivity {
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, Stage1ActivityMp.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -116,14 +113,14 @@ public class Stage1ActivitySsd extends AppCompatActivity {
         if(correctbox1 == 2){
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, Stage1ActivityMp.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -136,14 +133,14 @@ public class Stage1ActivitySsd extends AppCompatActivity {
         if(correctbox1 == 3){
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, Stage1ActivityMp.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -156,14 +153,14 @@ public class Stage1ActivitySsd extends AppCompatActivity {
         if(correctbox1 == 4){
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, Stage1ActivityMp.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -176,14 +173,14 @@ public class Stage1ActivitySsd extends AppCompatActivity {
         if(correctbox1 == 5){
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, Stage1ActivityMp.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, MainActivity.class);
                     startActivity(i);
                 }
             });
@@ -195,20 +192,19 @@ public class Stage1ActivitySsd extends AppCompatActivity {
         if(correctbox1 == 6){
             boxed6.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, Stage1ActivityMp.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed6.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivitySsd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, MainActivity.class);
                     startActivity(i);
                 }
             });
 
         }
-
     }
 
 

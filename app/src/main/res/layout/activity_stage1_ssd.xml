@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ah980627.gymnasiearbetetest.Stage1ActivitySsd">
 
+
     <TextView
         android:text="box3"
         android:layout_width="wrap_content"
@@ -34,27 +35,6 @@
         android:id="@+id/box4"
         android:onClick="onClick4"/>
 
-    <TextView
-        android:text="box5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/box4"
-        android:layout_toLeftOf="@+id/box3"
-        android:layout_toStartOf="@+id/box3"
-        android:layout_marginRight="23dp"
-        android:layout_marginEnd="23dp"
-        android:id="@+id/box5"
-        android:onClick="onClick5"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ssd"
-        android:id="@+id/imageView2"
-        android:layout_marginBottom="14dp"
-        android:layout_above="@+id/box1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="What is this component ?"
@@ -89,4 +69,39 @@
         android:layout_below="@+id/imageView2"
         android:layout_toRightOf="@+id/box4"
         android:layout_toEndOf="@+id/box4" />
+
+    <TextView
+        android:text="box5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/box5"
+        android:onClick="onClick5"
+        android:layout_alignBaseline="@+id/box4"
+        android:layout_alignBottom="@+id/box4"
+        android:layout_toRightOf="@+id/box2"
+        android:layout_toEndOf="@+id/box2" />
+
+    <TextView
+        android:text="box6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/box6"
+        android:onClick="onClick6"
+        android:layout_alignBaseline="@+id/box5"
+        android:layout_alignBottom="@+id/box5"
+        android:layout_alignLeft="@+id/box3"
+        android:layout_alignStart="@+id/box3" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ssd"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/box1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>

@@ -24,6 +24,7 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         boolean box3 = true;
         boolean box4 = true;
         boolean box5 = true;
+        boolean box6 = true;
 
         int correctbox1 = 0;
 
@@ -33,8 +34,9 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         String boxName3 = "";
         String boxName4 = "";
         String boxName5 = "";
+        String boxName6 = "";
 //skapar en arry med tal från 0 till 5
-        Integer[] arr = new Integer[5];
+        Integer[] arr = new Integer[6];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
         }
@@ -43,7 +45,7 @@ public class Stage1ActivityCpu extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk", "Grafikkort", "Processor", "PSU", "SSD"};
+        String[] getHardwareName = {"Hårddisk", "Grafikkort", "Processor", "PSU", "SSD", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
@@ -76,6 +78,13 @@ public class Stage1ActivityCpu extends AppCompatActivity {
                 box5 = false;
                 if(result == svar){
                     correctbox1 = 5;
+                }else {correctbox1 = correctbox1;}
+
+            }else if (box6) {
+                boxName6 = result;
+                box5 = false;
+                if(result == svar){
+                    correctbox1 = 6;
                 }else {correctbox1 = correctbox1;}
 
             }
@@ -173,6 +182,25 @@ public class Stage1ActivityCpu extends AppCompatActivity {
             });
         }else{
             boxed5.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    Intent i = new Intent(Stage1ActivityCpu.this, MainActivity.class);
+                    startActivity(i);
+                }
+            });
+
+        }
+        TextView boxed6 = (TextView)findViewById(R.id.box6);
+        boxed6.setText(boxName6);
+
+        if(correctbox1 == 6){
+            boxed6.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    startActivity(i);
+                }
+            });
+        }else{
+            boxed6.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityCpu.this, MainActivity.class);
                     startActivity(i);
