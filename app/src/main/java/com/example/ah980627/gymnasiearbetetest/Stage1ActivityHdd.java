@@ -1,9 +1,10 @@
-package com.example.ah980627.gymnasiearbetetest;
+    package com.example.ah980627.gymnasiearbetetest;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Arrays;
@@ -12,6 +13,12 @@ import java.util.Collections;
 
 
 public class Stage1ActivityHdd extends AppCompatActivity {
+
+    @Override
+    public void onBackPressed() {
+        // do nothing.
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +98,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         }
 
         //spell out the text from the for loop
-        TextView boxed1 = (TextView)findViewById(R.id.box1);
+        Button boxed1 = (Button)findViewById(R.id.box1);
         boxed1.setText(boxName1);
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){

@@ -10,6 +10,13 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Stage1ActivityMp extends AppCompatActivity {
+
+    @Override
+    public void onBackPressed() {
+        // do nothing.
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +32,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="Hårddisk";
+        String svar ="Modderkort";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";

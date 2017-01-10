@@ -14,6 +14,12 @@ import java.util.Collections;
 public class Stage1ActivityPsu extends AppCompatActivity {
 
     @Override
+    public void onBackPressed() {
+        // do nothing.
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stage1_psu);

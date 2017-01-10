@@ -53,7 +53,7 @@
         android:id="@+id/textView2"
         android:textSize="30sp" />
 
-    <TextView
+    <Button
         android:text="Box1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
