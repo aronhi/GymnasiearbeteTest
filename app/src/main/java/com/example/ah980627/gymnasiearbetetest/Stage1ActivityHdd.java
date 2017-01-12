@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.Button;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -110,14 +110,14 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         }else{
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        TextView boxed2 = (TextView)findViewById(R.id.box2);
+        Button boxed2 = (Button)findViewById(R.id.box2);
         boxed2.setText(boxName2);
 
         if(correctbox1 == 2){
@@ -130,14 +130,14 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         }else{
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        TextView boxed3 = (TextView)findViewById(R.id.box3);
+        Button boxed3 = (Button)findViewById(R.id.box3);
         boxed3.setText(boxName3);
 
         if(correctbox1 == 3){
@@ -150,14 +150,14 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         }else{
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        TextView boxed4 = (TextView)findViewById(R.id.box4);
+        Button boxed4 = (Button)findViewById(R.id.box4);
         boxed4.setText(boxName4);
 
         if(correctbox1 == 4){
@@ -170,14 +170,14 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         }else{
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        TextView boxed5 = (TextView)findViewById(R.id.box5);
+        Button boxed5 = (Button)findViewById(R.id.box5);
         boxed5.setText(boxName5);
 
         if(correctbox1 == 5){
@@ -188,15 +188,9 @@ public class Stage1ActivityHdd extends AppCompatActivity {
                 }
             });
         }else{
-            boxed5.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
-                    startActivity(i);
-                }
-            });
 
         }
-        TextView boxed6 = (TextView)findViewById(R.id.box6);
+        Button boxed6 = (Button)findViewById(R.id.box6);
         boxed6.setText(boxName6);
 
         if(correctbox1 == 6){
@@ -209,7 +203,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         }else{
             boxed6.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, MainActivity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });

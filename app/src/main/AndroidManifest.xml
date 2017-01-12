@@ -22,7 +22,8 @@
         <activity android:name=".Stage1ActivityPsu" />
         <activity android:name=".Stage1ActivityCpu" />
         <activity android:name=".Stage1ActivitySsd" />
-        <activity android:name=".Stage1ActivityMp"></activity>
+        <activity android:name=".Stage1ActivityMp" />
+        <activity android:name=".Fail1Activity"></activity>
     </application>
 
 </manifest>
