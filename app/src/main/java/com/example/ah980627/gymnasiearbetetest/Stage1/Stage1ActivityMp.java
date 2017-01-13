@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.ah980627.gymnasiearbetetest.R;
-import com.example.ah980627.gymnasiearbetetest.Stage2Activity;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -30,8 +29,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
         boolean box2 = true;
         boolean box3 = true;
         boolean box4 = true;
-        boolean box5 = true;
-        boolean box6 = true;
+
 
         int correctbox1 = 0;
 
@@ -40,8 +38,6 @@ public class Stage1ActivityMp extends AppCompatActivity {
         String boxName2 = "";
         String boxName3 = "";
         String boxName4 = "";
-        String boxName5 = "";
-        String boxName6 = "";
 //skapar en arry med tal från 0 till 6
         Integer[] arr = new Integer[6];
         for (int i = 0; i < arr.length; i++) {
@@ -52,7 +48,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk", "Grafikkort", "Processor", "PSU", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Hårddisk",  "PSU", "SSD", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
@@ -80,20 +76,6 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 if(result == svar){
                     correctbox1 = 4;
                 }else {correctbox1 = correctbox1;}
-            } else if (box5) {
-                boxName5 = result;
-                box5 = false;
-                if(result == svar){
-                    correctbox1 = 5;
-                }else {correctbox1 = correctbox1;}
-
-            }else if (box6) {
-                boxName6 = result;
-                box5 = false;
-                if(result == svar){
-                    correctbox1 = 6;
-                }else {correctbox1 = correctbox1;}
-
             }
         }
 
@@ -103,7 +85,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage1ActivityRam.class);
                     startActivity(i);
                 }
             });
@@ -123,7 +105,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
         if(correctbox1 == 2){
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage1ActivityRam.class);
                     startActivity(i);
                 }
             });
@@ -143,7 +125,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
         if(correctbox1 == 3){
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage1ActivityRam.class);
                     startActivity(i);
                 }
             });
@@ -163,7 +145,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
         if(correctbox1 == 4){
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
+                    Intent i = new Intent(Stage1ActivityMp.this, Stage1ActivityRam.class);
                     startActivity(i);
                 }
             });
@@ -177,44 +159,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
         }
 
-        Button boxed5 = (Button)findViewById(R.id.box5);
-        boxed5.setText(boxName5);
 
-        if(correctbox1 == 5){
-            boxed5.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
-                    startActivity(i);
-                }
-            });
-        }else{
-            boxed5.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Fail1Activity.class);
-                    startActivity(i);
-                }
-            });
-
-        }
-        Button boxed6 = (Button)findViewById(R.id.box6);
-        boxed6.setText(boxName6);
-
-        if(correctbox1 == 6){
-            boxed6.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Stage2Activity.class);
-                    startActivity(i);
-                }
-            });
-        }else{
-            boxed6.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityMp.this, Fail1Activity.class);
-                    startActivity(i);
-                }
-            });
-
-        }
     }
 
 

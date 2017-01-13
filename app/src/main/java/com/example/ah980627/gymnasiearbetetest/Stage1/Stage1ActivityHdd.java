@@ -31,8 +31,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         boolean box2 = true;
         boolean box3 = true;
         boolean box4 = true;
-        boolean box5 = true;
-        boolean box6 = true;
+
 
         int correctbox1 = 0;
 
@@ -41,10 +40,9 @@ public class Stage1ActivityHdd extends AppCompatActivity {
         String boxName2 = "";
         String boxName3 = "";
         String boxName4 = "";
-        String boxName5 = "";
-        String boxName6 = "";
+
 //skapar en arry med tal från 0 till 6
-        Integer[] arr = new Integer[6];
+        Integer[] arr = new Integer[4];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
         }
@@ -53,7 +51,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk", "Grafikkort", "Processor", "PSU", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Hårddisk", "PSU", "SSD", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
@@ -80,19 +78,6 @@ public class Stage1ActivityHdd extends AppCompatActivity {
                 box4 = false;
                 if(result == svar){
                     correctbox1 = 4;
-                }else {correctbox1 = correctbox1;}
-            } else if (box5) {
-                boxName5 = result;
-                box5 = false;
-                if(result == svar){
-                    correctbox1 = 5;
-                }else {correctbox1 = correctbox1;}
-
-            }else if (box6) {
-                boxName6 = result;
-                box5 = false;
-                if(result == svar){
-                    correctbox1 = 6;
                 }else {correctbox1 = correctbox1;}
 
             }
@@ -178,38 +163,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
 
         }
 
-        Button boxed5 = (Button)findViewById(R.id.box5);
-        boxed5.setText(boxName5);
 
-        if(correctbox1 == 5){
-            boxed5.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
-                    startActivity(i);
-                }
-            });
-        }else{
-
-        }
-        Button boxed6 = (Button)findViewById(R.id.box6);
-        boxed6.setText(boxName6);
-
-        if(correctbox1 == 6){
-            boxed6.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
-                    startActivity(i);
-                }
-            });
-        }else{
-            boxed6.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
-                    startActivity(i);
-                }
-            });
-
-        }
     }
 
 

@@ -15,15 +15,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HowToPlayActivity" />
-        <activity android:name=".Stage1.Stage1ActivityHdd" />
-        <activity android:name=".Stage2Activity" />
-        <activity android:name=".Stage1.Stage1ActivityGpu" />
-        <activity android:name=".Stage1.Stage1ActivityPsu" />
-        <activity android:name=".Stage1.Stage1ActivityCpu" />
-        <activity android:name=".Stage1.Stage1ActivitySsd" />
-        <activity android:name=".Stage1.Stage1ActivityMp" />
-        <activity android:name=".Stage1.Fail1Activity"></activity>
+        <activity android:name=".HowToPlayActivity"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivityHdd"
+            android:noHistory="true"/>
+        <activity android:name=".Stage2Activity"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivityGpu"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivityPsu"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivityCpu"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivitySsd"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivityMp"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Fail1Activity"
+            android:noHistory="true"/>
+        <activity android:name=".Stage1.Stage1ActivityRam"
+            android:noHistory="true"></activity>
     </application>
 
 </manifest>

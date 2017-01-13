@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.ah980627.gymnasiearbetetest.R;
+import com.example.ah980627.gymnasiearbetetest.Stage2Activity;
 
 import java.util.Arrays;
 import java.util.Collections;
 
 
 
-public class Stage1ActivityGpu extends AppCompatActivity {
+public class Stage1ActivityRam extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
@@ -24,7 +25,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage1_gpu);
+        setContentView(R.layout.activity_stage1_ram);
 
 
         boolean box1 = true;
@@ -35,13 +36,13 @@ public class Stage1ActivityGpu extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="Grafikkort";
+        String svar = "Internminne";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
         String boxName4 = "";
 
-//skapar en arry med tal från 0 till 5
+//skapar en arry med tal från 0 till 6
         Integer[] arr = new Integer[4];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
@@ -51,7 +52,7 @@ public class Stage1ActivityGpu extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = { "Grafikkort", "Processor", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Grafikkort", "Internminne", "PSU", "SSD",};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
@@ -88,98 +89,94 @@ public class Stage1ActivityGpu extends AppCompatActivity {
                     correctbox1 = correctbox1;
                 }
             }
-
         }
-
-
 
         //spell out the text from the for loop
-        Button boxed1 = (Button)findViewById(R.id.box1);
+        Button boxed1 = (Button) findViewById(R.id.box1);
         boxed1.setText(boxName1);
-        if(correctbox1 == 1){
-            boxed1.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
+        if (correctbox1 == 1) {
+            boxed1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed1.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Fail1Activity.class);
+        } else {
+            boxed1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        Button boxed2 = (Button)findViewById(R.id.box2);
+        Button boxed2 = (Button) findViewById(R.id.box2);
         boxed2.setText(boxName2);
 
-        if(correctbox1 == 2){
-            boxed2.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
+        if (correctbox1 == 2) {
+            boxed2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed2.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Fail1Activity.class);
+        } else {
+            boxed2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        Button boxed3 = (Button)findViewById(R.id.box3);
+        Button boxed3 = (Button) findViewById(R.id.box3);
         boxed3.setText(boxName3);
 
-        if(correctbox1 == 3){
-            boxed3.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
+        if (correctbox1 == 3) {
+            boxed3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed3.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Fail1Activity.class);
+        } else {
+            boxed3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
 
-        Button boxed4 = (Button)findViewById(R.id.box4);
+        Button boxed4 = (Button) findViewById(R.id.box4);
         boxed4.setText(boxName4);
 
-        if(correctbox1 == 4){
-            boxed4.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Stage1ActivityCpu.class);
+        if (correctbox1 == 4) {
+            boxed4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Stage2Activity.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed4.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityGpu.this, Fail1Activity.class);
+        } else {
+            boxed4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
-
-
 
     }
 
 
 
 }
+
 
 
 
