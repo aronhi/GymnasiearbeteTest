@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">GymnasiearbeteTest</string>
     <string name="HowToPlay">howtoplay</string>
+    <string name="HowtoplayText">I detta spel så kommer du att spela en typ av memmory som handlar
+    om komponenter i en dator. Du kommer få se bilder på komponenter och du kommer få gissa vad det är
+        tills du får rätt</string>
 </resources>

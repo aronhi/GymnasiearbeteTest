@@ -20,7 +20,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:text="How to play"
+            android:text="Hur spelar man"
             android:layout_height="80dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
@@ -30,10 +30,10 @@
             android:layout_marginBottom="31dp"
             android:id="@+id/button2"
             android:layout_width="150dp"
-            android:textSize="30dp"
             android:background="@android:color/transparent"
             android:textColor="@android:color/background_light"
-            android:onClick="HowToPlayOnClick" />
+            android:onClick="HowToPlayOnClick"
+            android:textSize="25dp" />
 
 
         <Button
