@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.ah980627.gymnasiearbetetest.Stage1ActivityMp">
+    tools:context="com.example.ah980627.gymnasiearbetetest.Stage1.Stage1ActivityMp">
 
     <TextView
         android:text="What is this component ?"

@@ -1,10 +1,12 @@
-package com.example.ah980627.gymnasiearbetetest;
+package com.example.ah980627.gymnasiearbetetest.Stage1;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.ah980627.gymnasiearbetetest.R;
 
 import java.util.Arrays;
 import java.util.Collections;

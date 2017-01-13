@@ -16,14 +16,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".HowToPlayActivity" />
-        <activity android:name=".Stage1ActivityHdd" />
+        <activity android:name=".Stage1.Stage1ActivityHdd" />
         <activity android:name=".Stage2Activity" />
-        <activity android:name=".Stage1ActivityGpu" />
-        <activity android:name=".Stage1ActivityPsu" />
-        <activity android:name=".Stage1ActivityCpu" />
-        <activity android:name=".Stage1ActivitySsd" />
-        <activity android:name=".Stage1ActivityMp" />
-        <activity android:name=".Fail1Activity"></activity>
+        <activity android:name=".Stage1.Stage1ActivityGpu" />
+        <activity android:name=".Stage1.Stage1ActivityPsu" />
+        <activity android:name=".Stage1.Stage1ActivityCpu" />
+        <activity android:name=".Stage1.Stage1ActivitySsd" />
+        <activity android:name=".Stage1.Stage1ActivityMp" />
+        <activity android:name=".Stage1.Fail1Activity"></activity>
     </application>
 
 </manifest>

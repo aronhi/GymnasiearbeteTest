@@ -1,4 +1,4 @@
-package com.example.ah980627.gymnasiearbetetest;
+package com.example.ah980627.gymnasiearbetetest.Stage1;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.ah980627.gymnasiearbetetest.R;
 
 public class Fail1Activity extends AppCompatActivity {
 

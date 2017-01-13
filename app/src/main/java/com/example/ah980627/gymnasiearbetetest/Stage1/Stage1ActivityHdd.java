@@ -1,4 +1,4 @@
-package com.example.ah980627.gymnasiearbetetest;
+    package com.example.ah980627.gymnasiearbetetest.Stage1;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.ah980627.gymnasiearbetetest.R;
+
 import java.util.Arrays;
 import java.util.Collections;
 
 
 
-public class Stage1ActivityCpu extends AppCompatActivity {
+public class Stage1ActivityHdd extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
@@ -22,7 +24,7 @@ public class Stage1ActivityCpu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage1_cpu);
+        setContentView(R.layout.activity_stage1);
 
 
         boolean box1 = true;
@@ -34,14 +36,14 @@ public class Stage1ActivityCpu extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="Processor";
+        String svar ="Hårddisk";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
         String boxName4 = "";
         String boxName5 = "";
         String boxName6 = "";
-//skapar en arry med tal från 0 till 5
+//skapar en arry med tal från 0 till 6
         Integer[] arr = new Integer[6];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
@@ -102,14 +104,14 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         if(correctbox1 == 1){
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed1.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Fail1Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
@@ -122,14 +124,14 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         if(correctbox1 == 2){
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed2.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Fail1Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
@@ -142,14 +144,14 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         if(correctbox1 == 3){
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed3.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Fail1Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
@@ -162,14 +164,14 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         if(correctbox1 == 4){
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed4.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Fail1Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
@@ -182,17 +184,11 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         if(correctbox1 == 5){
             boxed5.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
         }else{
-            boxed5.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Fail1Activity.class);
-                    startActivity(i);
-                }
-            });
 
         }
         Button boxed6 = (Button)findViewById(R.id.box6);
@@ -201,25 +197,24 @@ public class Stage1ActivityCpu extends AppCompatActivity {
         if(correctbox1 == 6){
             boxed6.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Stage1ActivityPsu.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
         }else{
             boxed6.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
-                    Intent i = new Intent(Stage1ActivityCpu.this, Fail1Activity.class);
+                    Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
                 }
             });
 
         }
-
     }
 
 
 
-}
+    }
 
 
 

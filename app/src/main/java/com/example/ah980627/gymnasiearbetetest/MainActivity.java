@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.ah980627.gymnasiearbetetest.Stage1.Stage1ActivityHdd;
+
 
 public class MainActivity extends AppCompatActivity {
 
