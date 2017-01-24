@@ -11,16 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ah980627.gymnasiearbetetest.Stage1.Stage1ActivityRam">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ram"
-        android:id="@+id/imageView3"
-        android:layout_marginBottom="138dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:text="What is this component ?"
         android:layout_width="wrap_content"
@@ -93,7 +83,15 @@
 
     </LinearLayout>
 
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ram"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="75dp" />
 
 
 </RelativeLayout>

@@ -51,7 +51,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk", "PSU", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Hårddisk", "Nätaggregat", "SSD", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];

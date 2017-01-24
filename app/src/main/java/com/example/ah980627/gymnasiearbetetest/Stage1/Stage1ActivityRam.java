@@ -52,7 +52,7 @@ public class Stage1ActivityRam extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Grafikkort", "Internminne", "PSU", "SSD",};
+        String[] getHardwareName = {"Grafikkort", "Internminne", "Nätaggregat", "SSD",};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];

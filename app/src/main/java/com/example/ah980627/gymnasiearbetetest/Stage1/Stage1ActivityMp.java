@@ -38,8 +38,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
         String boxName2 = "";
         String boxName3 = "";
         String boxName4 = "";
-//skapar en arry med tal från 0 till 6
-        Integer[] arr = new Integer[6];
+//skapar en arry med tal från 0 till 4
+       Integer[] arr = new Integer[4];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i;
         }
@@ -48,7 +48,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk",  "PSU", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Hårddisk",  "Nätaggregat", "SSD", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];

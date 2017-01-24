@@ -35,7 +35,7 @@ public class Stage1ActivityPsu extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="PSU";
+        String svar ="Nätaggregat";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -51,7 +51,7 @@ public class Stage1ActivityPsu extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk", "Grafikkort",  "PSU",  "Moderkort"};
+        String[] getHardwareName = {"Hårddisk", "Grafikkort",  "Nätaggregat",  "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
