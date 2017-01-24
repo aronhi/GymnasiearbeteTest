@@ -12,6 +12,11 @@ import com.example.ah980627.gymnasiearbetetest.R;
 public class Fail1Activity extends AppCompatActivity {
 
     @Override
+    public void onBackPressed() {
+        // do nothing.
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fail1);

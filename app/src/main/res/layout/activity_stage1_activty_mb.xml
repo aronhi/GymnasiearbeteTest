@@ -20,102 +20,74 @@
         android:id="@+id/textView2"
         android:textSize="30sp" />
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:columnCount="2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:layout_height="200dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="0.5">
+
+            <Button
+                android:text="Box2"
+                android:layout_width="match_parent"
+                android:id="@+id/box2"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:text="Box1"
+                android:layout_width="match_parent"
+                android:id="@+id/box1"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="0.5">
+
+            <Button
+                android:text="box4"
+                android:id="@+id/box4"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="box3"
+                android:layout_width="match_parent"
+                android:id="@+id/box3"
+
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/motherboard"
         android:id="@+id/imageView2"
-        android:layout_marginBottom="143dp"
+        android:layout_marginBottom="142dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:layout_marginTop="269dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <Button
-            android:text="box6"
-            android:layout_height="75dp"
-            android:id="@+id/box6"
-            android:onClick="onClick6"
-            android:maxWidth="110dp"
-            android:minWidth="110dp"
-            android:layout_width="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/box2"
-            android:layout_toEndOf="@+id/box2"
-            android:layout_marginBottom="24dp" />
-
-        <Button
-            android:text="Box2"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:id="@+id/box2"
-            android:onClick="onClick2"
-            android:layout_below="@+id/imageView2"
-            android:layout_toRightOf="@+id/box1"
-            android:minWidth="110dip"
-            android:width="110dp" />
-
-        <Button
-            android:text="box5"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:id="@+id/box5"
-            android:onClick="onClick5"
-            android:minWidth="110dp"
-            android:maxWidth="110dp"
-            android:width="110dp"
-            android:layout_below="@+id/box1" />
-
-        <Button
-            android:text="Box1"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:id="@+id/box1"
-            android:onClick="onClick1"
-            android:minWidth="110dip"
-            android:width="110dp"
-            android:layout_above="@+id/box4"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_row="1"
-            android:layout_column="1" />
-
-        <Button
-            android:text="box3"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:id="@+id/box3"
-            android:onClick="onClick3"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignRight="@+id/textView2"
-            android:layout_alignEnd="@+id/textView2"
-            android:layout_toEndOf="@+id/box2"
-            android:minWidth="110dp"
-            android:maxWidth="110dp"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:layout_toRightOf="@+id/box2" />
-
-        <Button
-            android:text="box4"
-            android:layout_height="75dp"
-            android:layout_marginBottom="59dp"
-            android:id="@+id/box4"
-            android:onClick="onClick4"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/box1"
-            android:layout_alignEnd="@+id/box1"
-            android:layout_width="wrap_content"
-            android:minWidth="110dp" />
-    </GridLayout>
 </RelativeLayout>

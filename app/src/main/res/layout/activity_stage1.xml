@@ -26,76 +26,72 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/hdd"
         android:id="@+id/imageView2"
-        android:layout_marginBottom="143dp"
+        android:layout_marginBottom="161dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <GridLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="343dp"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
 
 
-        <Button
-            android:text="box3"
-            android:layout_width="150dp"
-            android:id="@+id/box3"
-            android:onClick="onClick3"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignRight="@+id/textView2"
-            android:layout_alignEnd="@+id/textView2"
-            android:layout_toEndOf="@+id/box2"
-            android:minWidth="110dp"
-            android:maxWidth="110dp"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:layout_toRightOf="@+id/box2"
-            android:layout_height="100dp" />
-
-        <Button
-            android:text="Box2"
-            android:layout_width="wrap_content"
-            android:id="@+id/box2"
-            android:onClick="onClick2"
-            android:layout_below="@+id/imageView2"
-            android:layout_toRightOf="@+id/box1"
-            android:minWidth="110dip"
-            android:width="110dp"
-            android:layout_height="100dp" />
-
-        <Button
-            android:text="box4"
-            android:layout_marginBottom="59dp"
-            android:id="@+id/box4"
-            android:onClick="onClick4"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/box1"
-            android:layout_alignEnd="@+id/box1"
-            android:layout_width="wrap_content"
-            android:minWidth="110dp"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:layout_height="100dp" />
-
-        <Button
-            android:text="Box1"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:id="@+id/box1"
-            android:onClick="onClick1"
-            android:minWidth="110dip"
-            android:width="110dp"
-            android:layout_above="@+id/box4"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_height="100dp" />
-    </GridLayout>
+            android:layout_height="120dp"
+            android:layout_weight="0.5">
+
+            <Button
+                android:text="Box2"
+                android:layout_width="match_parent"
+                android:id="@+id/box2"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:text="Box1"
+                android:layout_width="match_parent"
+                android:id="@+id/box1"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="0.5">
+
+            <Button
+                android:text="box4"
+                android:id="@+id/box4"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="box3"
+                android:layout_width="match_parent"
+                android:id="@+id/box3"
+
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
