@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.ah980627.gymnasiearbetetest.R;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.logging.Handler;
 
 public class Stage1ActivityMp extends AppCompatActivity {
 
@@ -33,7 +35,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="Moderkort";
+        final String svar ="Moderkort";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -48,7 +50,7 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk",  "Nätaggregat", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Hårddisk",  "Nätaggregat", "SSD-minne", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
@@ -94,6 +96,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityMp.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -107,6 +111,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityMp.this, Stage1ActivityRam.class);
                     startActivity(i);
+
+
                 }
             });
         }else{
@@ -114,6 +120,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityMp.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -127,6 +135,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityMp.this, Stage1ActivityRam.class);
                     startActivity(i);
+
+
                 }
             });
         }else{
@@ -134,6 +144,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityMp.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -154,6 +166,8 @@ public class Stage1ActivityMp extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityMp.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -162,7 +176,9 @@ public class Stage1ActivityMp extends AppCompatActivity {
 
     }
 
-
+    void deleayRun(String svar){
+        Toast.makeText(this,"Rätt svar var "+ svar,Toast.LENGTH_LONG).show();
+    }
 
 }
 

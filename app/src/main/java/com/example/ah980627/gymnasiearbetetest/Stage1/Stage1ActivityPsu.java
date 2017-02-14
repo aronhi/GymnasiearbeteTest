@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.ah980627.gymnasiearbetetest.R;
 
@@ -35,7 +36,7 @@ public class Stage1ActivityPsu extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="Nätaggregat";
+        final String svar ="Nätaggregat";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -98,6 +99,8 @@ public class Stage1ActivityPsu extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityPsu.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -118,6 +121,8 @@ public class Stage1ActivityPsu extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityPsu.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -138,6 +143,8 @@ public class Stage1ActivityPsu extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityPsu.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -158,6 +165,8 @@ public class Stage1ActivityPsu extends AppCompatActivity {
                 public void onClick(View v){
                     Intent i = new Intent(Stage1ActivityPsu.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -167,6 +176,9 @@ public class Stage1ActivityPsu extends AppCompatActivity {
     }
 
 
+    void deleayRun(String svar){
+        Toast.makeText(this,"Rätt svar var "+ svar,Toast.LENGTH_LONG).show();
+    }
 
 }
 

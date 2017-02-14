@@ -1,10 +1,12 @@
     package com.example.ah980627.gymnasiearbetetest.Stage1;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.ah980627.gymnasiearbetetest.R;
 
@@ -35,7 +37,7 @@ public class Stage1ActivityHdd extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar ="Hårddisk";
+      final String svar = "Hårddisk";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -51,125 +53,147 @@ public class Stage1ActivityHdd extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Hårddisk", "Nätaggregat", "SSD", "Moderkort"};
+        String[] getHardwareName = {"Hårddisk", "Nätaggregat", "SSD-minne", "Moderkort"};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
             if (box1) {
                 boxName1 = result;
                 box1 = false;
-                if(result == svar){
+                if (result == svar) {
                     correctbox1 = 1;
-                }else {correctbox1 = correctbox1;}
+                } else {
+                    correctbox1 = correctbox1;
+                }
             } else if (box2) {
                 boxName2 = result;
                 box2 = false;
-                if(result == svar){
+                if (result == svar) {
                     correctbox1 = 2;
-                }else {correctbox1 = correctbox1;}
+                } else {
+                    correctbox1 = correctbox1;
+                }
             } else if (box3) {
                 boxName3 = result;
                 box3 = false;
-                if(result == svar){
+                if (result == svar) {
                     correctbox1 = 3;
-                }else {correctbox1 = correctbox1;}
+                } else {
+                    correctbox1 = correctbox1;
+                }
             } else if (box4) {
                 boxName4 = result;
                 box4 = false;
-                if(result == svar){
+                if (result == svar) {
                     correctbox1 = 4;
-                }else {correctbox1 = correctbox1;}
+                } else {
+                    correctbox1 = correctbox1;
+                }
 
             }
         }
 
         //spell out the text from the for loop
-        Button boxed1 = (Button)findViewById(R.id.box1);
+        Button boxed1 = (Button) findViewById(R.id.box1);
         boxed1.setText(boxName1);
-        if(correctbox1 == 1){
-            boxed1.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+
+        Handler handler;
+        Runnable delayRunnable;
+
+        handler = new Handler();
+
+
+        if (correctbox1 == 1) {
+            boxed1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed1.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        } else {
+            boxed1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
                 }
             });
 
         }
 
-        Button boxed2 = (Button)findViewById(R.id.box2);
+        Button boxed2 = (Button) findViewById(R.id.box2);
         boxed2.setText(boxName2);
 
-        if(correctbox1 == 2){
-            boxed2.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        if (correctbox1 == 2) {
+            boxed2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed2.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        } else {
+            boxed2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
                 }
             });
 
         }
 
-        Button boxed3 = (Button)findViewById(R.id.box3);
+        Button boxed3 = (Button) findViewById(R.id.box3);
         boxed3.setText(boxName3);
 
-        if(correctbox1 == 3){
-            boxed3.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        if (correctbox1 == 3) {
+            boxed3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed3.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        } else {
+            boxed3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
                 }
             });
 
         }
 
-        Button boxed4 = (Button)findViewById(R.id.box4);
+        Button boxed4 = (Button) findViewById(R.id.box4);
         boxed4.setText(boxName4);
 
-        if(correctbox1 == 4){
-            boxed4.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        if (correctbox1 == 4) {
+            boxed4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Stage1ActivityGpu.class);
                     startActivity(i);
                 }
             });
-        }else{
-            boxed4.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
+        } else {
+            boxed4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityHdd.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
                 }
-            });
 
+
+            });
         }
 
+    }
 
+    void deleayRun(String svar){
+        Toast.makeText(this,"Rätt svar var "+ svar,Toast.LENGTH_LONG).show();
     }
 
 
 
     }
-
 
 
 

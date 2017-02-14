@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.ah980627.gymnasiearbetetest.R;
 import com.example.ah980627.gymnasiearbetetest.Stage2Activity;
@@ -36,7 +37,7 @@ public class Stage1ActivityRam extends AppCompatActivity {
 
         int correctbox1 = 0;
 
-        String svar = "Internminne";
+        final String svar = "Internminne";
         String boxName1 = "";
         String boxName2 = "";
         String boxName3 = "";
@@ -52,7 +53,7 @@ public class Stage1ActivityRam extends AppCompatActivity {
 
 
         //skapr en string array med datorkomponenters namn
-        String[] getHardwareName = {"Grafikkort", "Internminne", "Nätaggregat", "SSD",};
+        String[] getHardwareName = {"Grafikkort", "Internminne", "Nätaggregat", "SSD-minne",};
         //ger komponenterna ett värde efter förta arrayen
         for (Integer arrNumber : arr) {
             String result = getHardwareName[arrNumber];
@@ -106,6 +107,8 @@ public class Stage1ActivityRam extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -126,6 +129,8 @@ public class Stage1ActivityRam extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -146,6 +151,8 @@ public class Stage1ActivityRam extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -166,6 +173,8 @@ public class Stage1ActivityRam extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent i = new Intent(Stage1ActivityRam.this, Fail1Activity.class);
                     startActivity(i);
+                    deleayRun(svar);
+
                 }
             });
 
@@ -173,7 +182,9 @@ public class Stage1ActivityRam extends AppCompatActivity {
 
     }
 
-
+    void deleayRun(String svar){
+        Toast.makeText(this,"Rätt svar var "+ svar,Toast.LENGTH_LONG).show();
+    }
 
 }
 
